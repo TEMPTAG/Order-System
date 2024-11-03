@@ -31,11 +31,13 @@ def place_order(menu):
     # Create a continuous while loop so customers can order multiple items
     while place_order:
     
-        # TODO: Loop through the menu dictionary, extracting the food category and
+        # Loop through the menu dictionary, extracting the food category and
         # the options for each category
+        for food_category, meals in menu.items():
 
             # TODO: Loop through the options for each food category, extracting the
             # meal and the price
+
                 # TODO: Print the menu item number, food category, meal, and price
 
                 # TODO: Update the menu selection number
