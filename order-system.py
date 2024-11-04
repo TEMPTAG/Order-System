@@ -62,8 +62,9 @@ def place_order(menu):
             # Since the customer decided to stop ordering, thank them for their order
             print("Thank you for your order.")
 
-            # TODO: Use a list comprehension to create a list called prices_list, which contains the total prices for each item in the order list:
+            # Use a list comprehension to create a list called prices_list, which contains the total prices for each item in the order list:
             # The total price for each item should multiply the price by quantity
+            prices_list = [item["Price"] * item["Quantity"] for item in order]
 
             # TODO: Create an order_total from the prices list using sum() and round the prices to 2 decimal places.
 
