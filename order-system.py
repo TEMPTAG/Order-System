@@ -29,9 +29,9 @@ def place_order(menu):
     place_order = True
     # Create a continuous while loop so customers can order multiple items
     while place_order:
-        print("What would you like to order?")
-        print_menu_heading()
+        print("What would you like to order? ")
         index = 1
+        print_menu_heading()
     
         # Loop through the menu dictionary, extracting the food category and the options for each category
         for food_category, options in menu.items():
