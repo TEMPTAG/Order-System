@@ -72,7 +72,8 @@ def place_order(menu):
             # Write a break statement or set the condition to False to exit the ordering loop
             place_order = False
 
-    # TODO: Return the order list and the order total
+    # Return the order list and the order total
+    return order, order_total
 
     
 
