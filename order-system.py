@@ -147,11 +147,13 @@ def print_itemized_receipt(receipt):
     # Loop through the items in the customer's receipt
     for item in receipt:
     
-        # TODO: Store the dictionary items ("Item name", "Price", "Quantity") as variables
-        
+        # Store the dictionary items ("Item name", "Price", "Quantity") as variables
+        item_name = item["Item name"]
+        price = item["Price"]
+        quantity = item["Quantity"]
 
-        # TODO: Print the receipt line using the print_receipt_line function send the item name, price, and quantity as separate arguments
-        
+        # Print the receipt line using the print_receipt_line function send the item name, price, and quantity as separate arguments
+        print_receipt_line(item_name, price, quantity)
 
 ##################################################
 #  STARTER CODE
