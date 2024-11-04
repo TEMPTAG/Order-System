@@ -42,8 +42,8 @@ def place_order(menu):
                 # Print the menu item number, food category, meal, and price
                 print_menu_line(index, food_category, meal, price)
 
-                # TODO: Update the menu selection number
-
+                # Update the menu selection number
+                index += 1
                 
         # Ask customer to input menu item number
         menu_selection = input("Type menu number: ")
