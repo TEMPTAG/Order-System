@@ -98,9 +98,8 @@ def update_order(order, menu_selection, menu_items):
         print(f"{menu_selection} was not a menu option.")
     else:
 
-        # TODO: Convert the menu selection to an integer
-
-
+        # Convert the menu selection to an integer
+        menu_selection = int(menu_selection)
 
         # TODO: Write a conditional statement that checks if the customer's input is an item on the menu and prints an error message if it is not
         
