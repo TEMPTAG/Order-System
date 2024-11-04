@@ -109,8 +109,10 @@ def update_order(order, menu_selection, menu_items):
             # Store the item name as a variable
             item_name = menu_items[menu_selection]["Item name"]
 
-            # TODO: A prompt (input) to the customer that prints the name of the menu item to the user and asks the quantity they would like to order.
+            # A prompt (input) to the customer that prints the name of the menu item to the user and asks the quantity they would like to order.
             # Store the return in a quantity variable
+            quantity = input(f"What quantity of {item_name} would you like? "
+            "(This will default to 1 if number is not entered)")
             
 
             # TODO: Write a conditional statement that checks if the input quantity can be converted to an integer, then converts it to an integer. 
