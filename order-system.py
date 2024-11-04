@@ -101,7 +101,10 @@ def update_order(order, menu_selection, menu_items):
         # Convert the menu selection to an integer
         menu_selection = int(menu_selection)
 
-        # TODO: Write a conditional statement that checks if the customer's input is an item on the menu and prints an error message if it is not
+        # Write a conditional statement that checks if the customer's input is an item on the menu and prints an error message if it is not
+        if not menu_selection in menu_items.keys():
+            print("Sorry, that number isn't an option.")
+        else:
         
             # Store the item name as a variable
             item_name = menu_items[menu_selection]["Item name"]
