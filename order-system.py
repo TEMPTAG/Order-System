@@ -121,10 +121,14 @@ def update_order(order, menu_selection, menu_items):
             else:
                 quantity = 1
 
-            # TODO: Add a dictionary with the item name, price, and quantity to the order list. Use the following names for the dictionary keys:
+            # Add a dictionary with the item name, price, and quantity to the order list. Use the following names for the dictionary keys:
             # "Item name", "Price", "Quantity"
+            order.append({
+                "Item name": item_name,
+                "Price": menu_items[menu_selection]["Price"],
+                "Quantity": quantity
+            })
             
-
     # TODO: Return the updated order
     
 
