@@ -93,7 +93,10 @@ def update_order(order, menu_selection, menu_items):
     order (list): A list of dictionaries containing the menu item name, price,
                     and quantity ordered (updated as needed).
     """
-    # TODO: Check if the customer's input string can be converted to an integer and prints an error message if it does not
+    # Check if the customer's input string can be converted to an integer and prints an error message if it does not
+    if not menu_selection.isdigit():
+        print(f"{menu_selection} was not a menu option.")
+    else:
 
         # TODO: Convert the menu selection to an integer
 
