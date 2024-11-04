@@ -17,8 +17,7 @@ def place_order(menu):
                   and quantity ordered.
     order_total (float): The total price of the order.
     """
-    # Set up order list. Order list will store a list of dictionaries for
-    # menu item name, item price, and quantity ordered
+    # Set up order list. Order list will store a list of dictionaries for menu item name, item price, and quantity ordered
     order = []
 
     # Get the menu items mapped to the menu numbers
@@ -30,18 +29,22 @@ def place_order(menu):
     place_order = True
     # Create a continuous while loop so customers can order multiple items
     while place_order:
+        print("What would you like to order?")
+        print_menu_heading()
+        index = 1
     
         # Loop through the menu dictionary, extracting the food category and the options for each category
-        for food_category, meals in menu.items():
+        for food_category, options in menu.items():
 
             # Loop through the options for each food category, extracting the meal and the price
-            for meal, price in meals.items():
+            for meal, price in options.items():
 
-                # TODO: Print the menu item number, food category, meal, and price
+                # Print the menu item number, food category, meal, and price
+                print_menu_line(index, food_category, meal, price)
 
                 # TODO: Update the menu selection number
-                
 
+                
         # Ask customer to input menu item number
         menu_selection = input("Type menu number: ")
 
@@ -53,25 +56,21 @@ def place_order(menu):
         # Let the customer know if they should type 'n' or 'N' to quit
         keep_ordering = input("Would you like to keep ordering? (N) to quit: ")
 
-        # TODO: Write a conditional statement that checks if the customer types
-        # 'n' or 'N'
+        # TODO: Write a conditional statement that checks if the customer types 'n' or 'N'
 
-            # Since the customer decided to stop ordering, thank them for
-            # their order
+            # Since the customer decided to stop ordering, thank them for their order
             print("Thank you for your order.")
 
-            # TODO: Use a list comprehension to create a list called prices_list,
-            # which contains the total prices for each item in the order list:
+            # TODO: Use a list comprehension to create a list called prices_list, which contains the total prices for each item in the order list:
             # The total price for each item should multiply the price by quantity
 
-            # TODO: Create an order_total from the prices list using sum()
-            # and round the prices to 2 decimal places.
+            # TODO: Create an order_total from the prices list using sum() and round the prices to 2 decimal places.
 
-            # Write a break statement or set the condition to False to exit
-            # the ordering loop
+            # Write a break statement or set the condition to False to exit the ordering loop
             place_order = False
 
     # TODO: Return the order list and the order total
+
     
 
 
@@ -90,37 +89,31 @@ def update_order(order, menu_selection, menu_items):
     order (list): A list of dictionaries containing the menu item name, price,
                     and quantity ordered (updated as needed).
     """
-    # TODO: Check if the customer's input string can be converted 
-    # to an integer and prints an error message if it does not
+    # TODO: Check if the customer's input string can be converted to an integer and prints an error message if it does not
 
-    
         # TODO: Convert the menu selection to an integer
 
 
-        # TODO: Write a conditional statement that checks if the customer's input is 
-        # an item on the menu and prints an error message if it is not
+
+        # TODO: Write a conditional statement that checks if the customer's input is an item on the menu and prints an error message if it is not
         
             # Store the item name as a variable
             item_name = menu_items[menu_selection]["Item name"]
 
-            # TODO: A prompt (input) to the customer that prints the name of the 
-            # menu item to the user and asks the quantity they would like to order.
+            # TODO: A prompt (input) to the customer that prints the name of the menu item to the user and asks the quantity they would like to order.
             # Store the return in a quantity variable
             
 
-            # TODO: Write a conditional statement that checks if the input quantity 
-            # can be converted to an integer, then converts it to an integer. 
+            # TODO: Write a conditional statement that checks if the input quantity can be converted to an integer, then converts it to an integer. 
             # Have it default to 1 if it does not.
 
 
-            # TODO: Add a dictionary with the item name, price, and quantity to the 
-            # order list. Use the following names for the dictionary keys:
+            # TODO: Add a dictionary with the item name, price, and quantity to the order list. Use the following names for the dictionary keys:
             # "Item name", "Price", "Quantity"
             
 
     # TODO: Return the updated order
     
-
 
 def print_itemized_receipt(receipt):
     """
@@ -138,8 +131,7 @@ def print_itemized_receipt(receipt):
         # TODO: Store the dictionary items ("Item name", "Price", "Quantity") as variables
         
 
-        # TODO: Print the receipt line using the print_receipt_line function
-        # send the item name, price, and quantity as separate arguments
+        # TODO: Print the receipt line using the print_receipt_line function send the item name, price, and quantity as separate arguments
         
 
 ##################################################
