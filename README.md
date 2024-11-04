@@ -88,7 +88,7 @@ Welcome to the Generic Take Out Restaurant! This Python program simulates a rest
 
 ## Contributing
 
-![GitHub contributors](https://img.shields.io/github/contributors/TEMPTAG/Tech-Quiz?color=green) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/TEMPTAG/Tech-Quiz)
+![GitHub contributors](https://img.shields.io/github/contributors/TEMPTAG/Order-System?color=green) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/TEMPTAG/Order-System)
 
 OH. MY. GOODNESS. Collaborations are amazing. Share ideas, code, etc. with others is the best way to share knowledge, mutual enthusiasms, and a lot of times we make cool friends along the way. I welcome contributions in many ways, shapes, and forms:
 
