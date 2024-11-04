@@ -113,11 +113,13 @@ def update_order(order, menu_selection, menu_items):
             # Store the return in a quantity variable
             quantity = input(f"What quantity of {item_name} would you like? "
             "(This will default to 1 if number is not entered)")
-            
 
-            # TODO: Write a conditional statement that checks if the input quantity can be converted to an integer, then converts it to an integer. 
+            # Write a conditional statement that checks if the input quantity can be converted to an integer, then converts it to an integer. 
             # Have it default to 1 if it does not.
-
+            if quantity.isdigit():
+                quantity = int(quantity)
+            else:
+                quantity = 1
 
             # TODO: Add a dictionary with the item name, price, and quantity to the order list. Use the following names for the dictionary keys:
             # "Item name", "Price", "Quantity"
