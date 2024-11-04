@@ -66,7 +66,8 @@ def place_order(menu):
             # The total price for each item should multiply the price by quantity
             prices_list = [item["Price"] * item["Quantity"] for item in order]
 
-            # TODO: Create an order_total from the prices list using sum() and round the prices to 2 decimal places.
+            # Create an order_total from the prices list using sum() and round the prices to 2 decimal places.
+            order_total = round(sum(prices_list), 2)
 
             # Write a break statement or set the condition to False to exit the ordering loop
             place_order = False
