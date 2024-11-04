@@ -129,7 +129,8 @@ def update_order(order, menu_selection, menu_items):
                 "Quantity": quantity
             })
             
-    # TODO: Return the updated order
+    # Return the updated order
+    return order
     
 
 def print_itemized_receipt(receipt):
