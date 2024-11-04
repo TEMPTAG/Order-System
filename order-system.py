@@ -56,7 +56,8 @@ def place_order(menu):
         # Let the customer know if they should type 'n' or 'N' to quit
         keep_ordering = input("Would you like to keep ordering? (N) to quit: ")
 
-        # TODO: Write a conditional statement that checks if the customer types 'n' or 'N'
+        # Write a conditional statement that checks if the customer types 'n' or 'N'
+        if keep_ordering.lower() == "n":
 
             # Since the customer decided to stop ordering, thank them for their order
             print("Thank you for your order.")
