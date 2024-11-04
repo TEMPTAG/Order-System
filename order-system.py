@@ -144,7 +144,8 @@ def print_itemized_receipt(receipt):
     # Uncomment the following line if you need to check the structure of the receipt
     #print(receipt)
 
-    # TODO: Loop through the items in the customer's receipt
+    # Loop through the items in the customer's receipt
+    for item in receipt:
     
         # TODO: Store the dictionary items ("Item name", "Price", "Quantity") as variables
         
